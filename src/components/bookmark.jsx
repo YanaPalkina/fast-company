@@ -14,7 +14,7 @@ const BookMark = ({ onBookMark, ID, user }) => {
 
 BookMark.propTypes = {
     onBookMark: PropTypes.func.isRequired,
-    ID: PropTypes.number.isRequired,
+    ID: PropTypes.string.isRequired,
     user: PropTypes.object.isRequired,
 };
 

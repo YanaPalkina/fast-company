@@ -22,13 +22,11 @@ const User = ({ user, onDelete, onBookMark }) => {
                 <td>{user.completedMeetings}</td>
                 <td>{user.rate} / 5</td>
                 <td>
-                    {
-                        <BookMark
-                            onBookMark={onBookMark}
-                            ID={user._id}
-                            user={user}
-                        />
-                    }
+                    <BookMark
+                        onBookMark={onBookMark}
+                        ID={user._id}
+                        user={user}
+                    />
                 </td>
 
                 <td>

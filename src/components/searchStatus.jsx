@@ -10,7 +10,11 @@ const SearchStatus = ({ length }) => {
         }
     };
 
-    return <span className="badge bg-primary ">{renderPhrase()} </span>;
+    return (
+        <h5>
+            <span className="badge bg-primary m-2     ">{renderPhrase()} </span>
+        </h5>
+    );
 };
 SearchStatus.propTypes = {
     length: PropTypes.number.isRequired,
