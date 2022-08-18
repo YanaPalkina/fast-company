@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const BookMark = ({ onBookMark, ID, user }) => {
+const BookMark = ({ onBookMark, userId, user }) => {
     const handleToggleBookMark = () => {
-        onBookMark(ID);
+        onBookMark(userId);
     };
 
     return (
@@ -15,7 +15,7 @@ const BookMark = ({ onBookMark, ID, user }) => {
 
 BookMark.propTypes = {
     onBookMark: PropTypes.func.isRequired,
-    ID: PropTypes.string.isRequired,
+    userId: PropTypes.string.isRequired,
     user: PropTypes.object.isRequired,
 };
 
